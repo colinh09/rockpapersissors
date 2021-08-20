@@ -16,8 +16,7 @@ button1.classList.add('button1');
 button1.textContent = "Rock";
 button1.style.cssText = "color: black";
 button1.style.fontSize = 30;
-button1.style.position = "relative";
-button1.style.left = "300px";
+
 container.appendChild(button1);
 
 const button2 = document.createElement('button');
@@ -25,8 +24,6 @@ button2.classList.add('button2');
 button2.textContent = "Paper";
 button2.style.cssText = "color: black";
 button2.style.fontSize = 30;
-button2.style.left= "400px";
-button2.style.position = "relative";
 
 container.appendChild(button2);
 
@@ -35,9 +32,8 @@ button3.classList.add('button3');
 button3.textContent = "Sissors";
 button3.style.cssText = "color: black";
 button3.style.fontSize = 30;
-button3.style.position = "relative";
-button3.style.left = "500px"
 container.appendChild(button3);
+
 
 //display div
 const display = document.querySelector("#display");
