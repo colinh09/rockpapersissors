@@ -1,3 +1,13 @@
+const heading = document.querySelector("#header")
+
+const h1 = document.createElement('h1');
+h1.classList.add('h1');
+h1.style.fontSize = 100;
+h1.style.cssText = "color: black";
+h1.style.textAlign = "center";
+h1.textContent = "Rock, Paper, and Sissors - Colin Hwang";
+heading.appendChild(h1);
+
 //CSS to create buttons using javascript
 const container = document.querySelector("#container");
 
@@ -5,18 +15,28 @@ const button1 = document.createElement('button');
 button1.classList.add('button1');
 button1.textContent = "Rock";
 button1.style.cssText = "color: black";
+button1.style.fontSize = 30;
+button1.style.position = "relative";
+button1.style.left = "300px";
 container.appendChild(button1);
 
 const button2 = document.createElement('button');
 button2.classList.add('button2');
 button2.textContent = "Paper";
 button2.style.cssText = "color: black";
+button2.style.fontSize = 30;
+button2.style.left= "400px";
+button2.style.position = "relative";
+
 container.appendChild(button2);
 
 const button3 = document.createElement('button');
 button3.classList.add('button3');
 button3.textContent = "Sissors";
 button3.style.cssText = "color: black";
+button3.style.fontSize = 30;
+button3.style.position = "relative";
+button3.style.left = "500px"
 container.appendChild(button3);
 
 //display div
@@ -24,14 +44,16 @@ const display = document.querySelector("#display");
 
 const score = document.createElement('p');
 score.classList.add('score');
-score.textContent = "";
+score.textContent = "Win the game by beating the computer in a best of 5 of RPS";
 score.style.cssText = "color: black";
+score.style.textAlign = "center";
 display.appendChild(score);
 
 const results = document.createElement('p');
 results.classList.add('results');
-results.textContent = "";
+results.textContent = "Now, what will it be? Rock, paper or sissors?";
 results.style.cssText = "color: black";
+results.style.textAlign = "center";
 display.appendChild(results);
 
 
